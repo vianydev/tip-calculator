@@ -1,0 +1,60 @@
+#tip-container {
+    margin: 2rem 0;
+}
+#tip-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#tipPercentage {
+    width: 120px;
+    margin: 5px 2px;
+    padding: .8rem 2.8rem;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    background-color: hsl(183, 100%, 15%);
+    border: 2px solid hsl(183, 100%, 15%);
+    border-radius: 5px;
+}
+
+#tipPercentage:active {
+    color: hsl(183, 100%, 15%);
+    border-color: hsl(172, 67%, 45%);
+    background-color: hsl(172, 67%, 45%);
+}
+
+#tipPercentage:hover {
+    color: hsl(183, 100%, 15%);
+    border-color: hsl(172, 67%, 45%);
+    background-color: hsl(172, 67%, 45%);
+}
+
+#tipPercentageCustom {
+    width: 120px;
+    margin: 5px 2px;
+    padding: .8rem;
+    text-align: center;
+    color: hsl(184, 14%, 56%);
+    background-color: hsl(203, 50%, 97%);
+    border: 2px solid hsl(203, 50%, 97%);
+    border-radius: 5px;
+}
+
+#tipPercentageCustom:focus-visible {
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(203, 50%, 97%);
+    outline: 2px solid hsl(172, 67%, 45%);
+}
+
+/*Remove arrow on Custom box Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    padding: 0;
+  -moz-appearance: textfield;
+}
