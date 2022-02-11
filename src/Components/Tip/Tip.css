@@ -1,6 +1,7 @@
 #tip-container {
     margin: 2rem 0;
 }
+
 #tip-box {
     display: flex;
     flex-flow: row wrap;
@@ -16,9 +17,13 @@
     background-color: hsl(183, 100%, 15%);
     border: 2px solid hsl(183, 100%, 15%);
     border-radius: 5px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
 }
 
 #tipPercentage:active {
+    transform: translateY(2px);
     color: hsl(183, 100%, 15%);
     border-color: hsl(172, 67%, 45%);
     background-color: hsl(172, 67%, 45%);
@@ -47,14 +52,20 @@
     outline: 2px solid hsl(172, 67%, 45%);
 }
 
+#tipPercentageCustom:focus-visible {
+    outline: 2px solid hsl(172, 67%, 45%);
+}
+
 /*Remove arrow on Custom box Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+  outline: none;
 }
 /* Firefox */
 input[type=number] {
     padding: 0;
   -moz-appearance: textfield;
+  outline: none;
 }

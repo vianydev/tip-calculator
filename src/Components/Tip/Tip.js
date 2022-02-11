@@ -29,7 +29,7 @@ const Tip = ({handleTip, tip}) => {
                     type="number" 
                     placeholder="Custom"
                     onChange={handleTip}
-                    value={tip}
+                    value={tip < 1 ? "" : tip}
                 />
             </div>
         </div>

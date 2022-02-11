@@ -31,6 +31,7 @@ input, button {
   color: hsl(183, 100%, 15%);
 }
 
+
 /* Input Bill and People */
 #input-container {
   margin: 2rem 0;
@@ -45,7 +46,7 @@ input, button {
   border-radius: 5px;
 }
 
-.input-box:focus-visible {
+.input-box:focus-visible, .input-box:focus, .input-box:active {
   outline: 2px solid hsl(172, 67%, 45%);
 }
 
@@ -96,5 +97,12 @@ input, button {
   background-color: hsl(172, 67%, 45%);
   border: 2px solid hsl(172, 67%, 45%);
   border-radius: 5px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.reset-button:active {
+  transform: translateY(2px);
 }
 
